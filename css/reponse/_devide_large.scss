@@ -1,0 +1,55 @@
+@media screen
+and (min-width: $devide_size_large)
+{
+  /*
+* devide large > 1200px
+*/
+
+}
+
+@media screen
+and( max-width: 1440px)
+and (min-width: $devide_size_large)
+{
+  /*
+* devide large > 1200px and < 1440px
+*/
+
+  header#header-vsh {
+    .box-menu-header {
+      .logo-main {
+        .logo-home{
+          font-size: 15px;
+        }
+      }
+      .nav-logo-page {
+        ul.box-main-menu {
+          li.list-menu {
+            a.item-menu{
+              padding: 7px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .container-jewelry {
+    .box-item-jewelry {
+      .name-product{
+        font-size: 30px;
+      }
+      .price-sale {
+        .price{
+          font-size: 36px;
+
+        }
+        .price-old{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+}

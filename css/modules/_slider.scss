@@ -1,0 +1,52 @@
+#carousel-main{
+  .owl-nav{
+    margin: 0;
+  }
+  .owl-dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    @include translate-x(-50%);
+    .owl-dot{
+      &.active, &:hover{
+        span{
+          background: $color-yellow;
+        }
+      }
+      span{
+        margin: 5px;
+      }
+    }
+  }
+  .btn-next, .btn-prev{
+    border: none;
+    background: $color-gray-button;
+    @include radius(3px);
+    padding: 10px;
+    position: absolute;
+    top: calc(50% - 7px);
+  }
+  .btn-prev{
+    left: 10px;
+    i.prev{
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: url("../images/icon-arrow-down.png") no-repeat  center center;
+      background-size: 100%;
+      @include rotate(90deg);
+    }
+  }
+  .btn-next{
+    right: 10px;
+    i.next{
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: url("../images/icon-arrow-down.png") no-repeat  center center;
+      background-size: 100%;
+      @include rotate(-90deg);
+    }
+  }
+
+}

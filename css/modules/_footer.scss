@@ -1,0 +1,27 @@
+a.btn-back-to-top{
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 10;
+  font-size: 15px;
+  text-align: center;
+  color: $color-black-text;
+  @include radius(4px);
+  font-family: $main-b;
+  background: $color-yellow;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  display: none;
+  &.active{
+    display: inline-block;
+  }
+}
+footer{
+  text-align: center;
+  font-size: 24px;
+  padding: 25px 0;
+  background: $color-white;
+}

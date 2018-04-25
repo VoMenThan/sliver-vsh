@@ -1,0 +1,231 @@
+.title-tab{
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+
+  .title-text{
+    font-size: 50px;
+    font-family: $main-b;
+    color: $color-yellow;
+  }
+  ul.tab-title-product{
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    li{
+      margin: 0;
+      margin-right: 10px;
+      a{
+        border-color: $color-gray-border-pro;
+        background: $color-white;
+        @include radius(4px);
+        font-family: $main-b;
+        background: #dfb858;
+        font-size: 30px;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      &.active{
+        a{
+          background: $color-yellow;
+          color: $color-white;
+        }
+
+      }
+    }
+  }
+}
+
+.container-jewelry{
+  text-align: center;
+  margin-top: 40px;
+  .box-item-jewelry{
+    text-align: center;
+    a{
+      display: inline-block;
+      color: inherit;
+    }
+    .image-product{
+      border: 1px solid $color-gray-border-pro;
+      display: inline-block;
+      border-radius: 5px;
+      position: relative;
+      transition: .3s;
+      &:hover{
+        box-shadow: 4px 4px 4px $color-gray-border;
+      }
+    }
+    .hot-prodcut{
+      background: $color-yellow-circle;
+      width: 75px;
+      height: 75px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      @include radius(50%);
+      text-align: center;
+      @include justify-content(center);
+      @include flex();
+      @include align-items(center);
+      -webkit-box-shadow: 4px 4px 4px $color-gray-border;
+      -moz-box-shadow: 4px 4px 4px $color-gray-border;
+      box-shadow: 4px 4px 4px $color-gray-border;
+      font-size: 20px;
+      font-family: $main-b;
+      color: $color-white;
+    }
+    .name-product{
+      font-size: 46px;
+      text-transform: uppercase;
+    }
+    .price-sale{
+      .price{
+        font-size: 46px;
+        color: $color-yellow;
+        font-family: $main-b;
+        padding: 0 10px;
+      }
+      .price-old{
+        font-size: 30px;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+.owl-carousel{
+  .owl-nav{
+    margin: 0;
+  }
+  .owl-dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    @include translate-x(-50%);
+    .owl-dot{
+      &.active, &:hover{
+        span{
+          background: $color-yellow;
+        }
+      }
+      span{
+        margin: 5px;
+      }
+    }
+  }
+  .btn-next, .btn-prev{
+    border: none;
+    background: $color-gray-button;
+    @include radius(3px);
+    padding: 10px;
+    position: absolute;
+    top: calc(50% - 7px);
+  }
+  .btn-prev{
+    left: 10px;
+    i.prev{
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: url("../images/icon-arrow-down.png") no-repeat  center center;
+      background-size: 100%;
+      @include rotate(90deg);
+    }
+  }
+  .btn-next{
+    right: 10px;
+    i.next{
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: url("../images/icon-arrow-down.png") no-repeat  center center;
+      background-size: 100%;
+      @include rotate(-90deg);
+    }
+  }
+}
+
+.carousel-products{
+  .btn-prev{
+     left: 0;
+   }
+  .btn-next{
+    right: 0;
+  }
+}
+
+a[class*="btn-yellow"]{
+  border-color: $color-gray-border-pro;
+  background: $color-white;
+  color: $color-black-text;
+  @include radius(4px);
+  font-family: $main-b;
+  background: $color-yellow;
+  font-size: 30px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 20px 0;
+  &.active{
+    a{
+      background: $color-yellow;
+      color: $color-white;
+    }
+
+  }
+}
+
+.ad-banner{
+  margin-bottom: 15px;
+  img{
+    max-width: 100%;
+  }
+}
+
+
+
+.banner-contact-slider-house{
+  img{
+    max-width: 100%;
+  }
+  .box-contact{
+    font-size: 20px;
+    padding-left: 20px;
+    color: $color-white;
+    span{
+      font-family: $main-b;
+    }
+  }
+  .bar-contact-slider-house{
+    background: $color-gray-contact;
+  }
+  ul.box-socials{
+    height: 60px;
+    li.item-social{
+      padding-right: 50px;
+      a{
+        &.icon{
+          width: 62px;
+          height: 60px;
+          background: url(../images/list-icon-social-black.png) no-repeat;
+          -webkit-background-size: auto 100%;
+          background-size: auto 100%;
+        }
+        &.-fb{
+          background-position: -82px 0 !important;
+        }
+        &.-intagram{
+          background-position: -6px 0 !important;
+        }
+        &.-youtube{
+          background-position: -159px 0 !important;
+        }
+      }
+
+    }
+  }
+}
+

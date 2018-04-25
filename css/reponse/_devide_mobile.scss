@@ -1,0 +1,16 @@
+@media screen
+and (max-width: $devide_size_mobile)
+{
+  /*
+* devide mobile <425px
+*/
+
+  ul.box-menu-mobile {
+    a.item-menu-mb{
+      font-size: 20px;
+    }
+  }
+
+
+
+}

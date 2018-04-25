@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p{
+  margin-bottom: 10px;
+}
+a, a:hover{
+  text-decoration: none;
+}
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+ul li{
+  list-style-type: none;
+}
+/*Font custom */
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url('../fonts/MyriadProRegular.eot');
+  src: url('../fonts/MyriadProRegular.woff2') format('woff2'),
+  url('../fonts/MyriadProRegular.woff') format('woff'),
+  url('../fonts/MyriadProRegular.ttf') format('truetype'),
+  url('../fonts/MyriadProRegular.svg#MyriadProRegular') format('svg'),
+  url('../fonts/MyriadProRegular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-SemiboldCond';
+  src: url('../fonts/MyriadPro-SemiboldCond.eot');
+  src: url('../fonts/MyriadPro-SemiboldCond.woff2') format('woff2'),
+  url('../fonts/MyriadPro-SemiboldCond.woff') format('woff'),
+  url('../fonts/MyriadPro-SemiboldCond.ttf') format('truetype'),
+  url('../fonts/MyriadPro-SemiboldCond.svg#MyriadPro-SemiboldCond') format('svg'),
+  url('../fonts/MyriadPro-SemiboldCond.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: url('../fonts/MyriadPro-Light.eot');
+  src: url('../fonts/MyriadPro-Light.woff2') format('woff2'),
+  url('../fonts/MyriadPro-Light.woff') format('woff'),
+  url('../fonts/MyriadPro-Light.ttf') format('truetype'),
+  url('../fonts/MyriadPro-Light.svg#MyriadPro-Light') format('svg'),
+  url('../fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-LightCond';
+  src: url('../fonts/MyriadPro-LightCond.eot');
+  src: url('../fonts/MyriadPro-LightCond.woff2') format('woff2'),
+  url('../fonts/MyriadPro-LightCond.woff') format('woff'),
+  url('../fonts/MyriadPro-LightCond.ttf') format('truetype'),
+  url('../fonts/MyriadPro-LightCond.svg#MyriadPro-LightCond') format('svg'),
+  url('../fonts/MyriadPro-LightCond.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-BoldCond';
+  src: url('../fonts/MyriadPro-BoldCond.eot');
+  src: url('../fonts/MyriadPro-BoldCond.woff2') format('woff2'),
+  url('../fonts/MyriadPro-BoldCond.woff') format('woff'),
+  url('../fonts/MyriadPro-BoldCond.ttf') format('truetype'),
+  url('../fonts/MyriadPro-BoldCond.svg#MyriadPro-BoldCond') format('svg'),
+  url('../fonts/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

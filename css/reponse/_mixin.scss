@@ -1,0 +1,108 @@
+
+
+
+
+
+
+
+/*setup size menu main in nav*/
+@mixin resizeHeaderMenu($width-box-header, $padding-nav, $font-size-nav: null){
+  header {
+    .box-header {
+      width: $width-box-header;
+    }
+    nav.nav-giahu-page ul.box-main-menu a{
+      padding: $padding-nav;
+      font-size: $font-size-nav;
+    }
+  }
+
+}
+/*setup content center*/
+@mixin setHeaderMediumCenter(){
+  header {
+    text-align: center;
+    div.logo-gia-hu{
+      float: none !important;
+    }
+    nav.nav-giahu-page{
+      float: none !important;
+    }
+  }
+}
+/*setup size menu main in nav on mobile*/
+@mixin setHeaderMenuMobile(){
+  header {
+    text-align: center;
+    nav.nav-giahu-page{
+      float: none !important;
+    }
+  }
+}
+/*setup font-size portfolio title and des*/
+@mixin setFontPortfolioTitleDes($font-title: 18px, $font-des: 16px){
+  .content-portforlio {
+    div.box-portfolio {
+      a.item-portfolio {
+        span.title-portfolio{
+          font-size: $font-title;
+        }
+      }
+
+      .box-description{
+        font-size: $font-des;
+      }
+    }
+  }
+}
+/*setup font-size footer*/
+@mixin setFontSizeFooter(){
+  footer.footer-giahu h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+  }
+  footer.footer-giahu p {
+    width: 70%;
+    font-size: 12px;
+  }
+}
+@mixin setMarginTopMenu($top){
+  header{
+    width: 100%;
+    height: $top;
+  }
+}
+@mixin setTabMenu($padding, $fontSize, $width: null, $display: null){
+  .container div.box-tab.text-center a.tab-content{
+    padding: $padding;
+    font-size: $fontSize;
+    width: $width;
+    display: $display;
+  }
+}
+
+@mixin setImagePartner($width, $left, $width-partner){
+  div.box-logo-partner{
+    .owl-carousel .owl-item img{
+      width: $width;
+      margin: auto;
+    }
+    .owl-theme .owl-nav{
+      left: $left;
+      width: $width-partner;
+    }
+  }
+}
+
+
+@mixin setMarginPartner($top , $bottom){
+  div.box-logo-partner {
+    margin-top: $top;
+    margin-bottom: $bottom;
+  }
+}
+
+
+
+
