@@ -1,10 +1,12 @@
 .title-tab{
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
-
+  margin-top: 30px;
+  margin-bottom: 10px;
+  .clear-star{
+    width: 230px;
+  }
   .title-text{
-    font-size: 50px;
+    font-size: 30px;
     font-family: $main-b;
     color: $color-yellow;
   }
@@ -22,11 +24,14 @@
         background: $color-white;
         @include radius(4px);
         font-family: $main-b;
-        background: #dfb858;
-        font-size: 30px;
+        font-size: 16px;
         padding: 5px 10px;
         text-transform: uppercase;
         margin: 0;
+        &:hover{
+          background: $color-yellow;
+          color: $color-white;
+        }
       }
       &.active{
         a{
@@ -41,12 +46,17 @@
 
 .container-jewelry{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 15px;
   .box-item-jewelry{
     text-align: center;
     a{
       display: inline-block;
       color: inherit;
+      &:hover > .image-product{
+        -webkit-box-shadow: 4px 4px 4px $color-gray-border;
+        -moz-box-shadow: 4px 4px 4px $color-gray-border;
+        box-shadow: 4px 4px 4px $color-gray-border;
+      }
     }
     .image-product{
       border: 1px solid $color-gray-border-pro;
@@ -54,42 +64,39 @@
       border-radius: 5px;
       position: relative;
       transition: .3s;
-      &:hover{
-        box-shadow: 4px 4px 4px $color-gray-border;
-      }
     }
     .hot-prodcut{
       background: $color-yellow-circle;
-      width: 75px;
-      height: 75px;
+      width: 50px;
+      height: 50px;
       position: absolute;
-      top: 20px;
-      left: 20px;
+      top: 10px;
+      left: 10px;
       @include radius(50%);
       text-align: center;
       @include justify-content(center);
       @include flex();
       @include align-items(center);
-      -webkit-box-shadow: 4px 4px 4px $color-gray-border;
-      -moz-box-shadow: 4px 4px 4px $color-gray-border;
-      box-shadow: 4px 4px 4px $color-gray-border;
-      font-size: 20px;
+      -webkit-box-shadow: 2px 2px 4px $color-gray-border;
+      -moz-box-shadow: 2px 4px 4px $color-gray-border;
+      box-shadow: 2px 2px 2px $color-gray-border;
+      font-size: 15px;
       font-family: $main-b;
       color: $color-white;
     }
     .name-product{
-      font-size: 46px;
+      font-size: 20px;
       text-transform: uppercase;
     }
     .price-sale{
       .price{
-        font-size: 46px;
+        font-size: 28px;
         color: $color-yellow;
         font-family: $main-b;
         padding: 0 10px;
       }
       .price-old{
-        font-size: 30px;
+        font-size: 18px;
         text-decoration: line-through;
       }
     }
@@ -164,17 +171,20 @@ a[class*="btn-yellow"]{
   @include radius(4px);
   font-family: $main-b;
   background: $color-yellow;
-  font-size: 30px;
+  font-size: 17px;
   padding: 5px 10px;
   text-transform: uppercase;
   display: inline-block;
-  margin: 20px 0;
+  margin: 10px 0;
   &.active{
     a{
       background: $color-yellow;
       color: $color-white;
     }
 
+  }
+  &:hover{
+    opacity: .7;
   }
 }
 
@@ -192,8 +202,7 @@ a[class*="btn-yellow"]{
     max-width: 100%;
   }
   .box-contact{
-    font-size: 20px;
-    padding-left: 20px;
+    font-size: 16px;
     color: $color-white;
     span{
       font-family: $main-b;
@@ -203,25 +212,25 @@ a[class*="btn-yellow"]{
     background: $color-gray-contact;
   }
   ul.box-socials{
-    height: 60px;
     li.item-social{
-      padding-right: 50px;
+      padding-right: 30px;
+      vertical-align: text-top;
       a{
         &.icon{
-          width: 62px;
-          height: 60px;
+          width: 42px;
+          height: 40px;
           background: url(../images/list-icon-social-black.png) no-repeat;
           -webkit-background-size: auto 100%;
           background-size: auto 100%;
         }
         &.-fb{
-          background-position: -82px 0 !important;
+          background-position: -54px 0 !important;
         }
         &.-intagram{
-          background-position: -6px 0 !important;
+          background-position: -3px 0 !important;
         }
         &.-youtube{
-          background-position: -159px 0 !important;
+          background-position: -105px 0 !important;
         }
       }
 

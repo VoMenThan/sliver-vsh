@@ -10,11 +10,14 @@ header#header-vsh{
   width: 100%;
   /*navigate status social top*/
   .bar-top-header{
-    background: $color-yellow;
+    background: #737373;
     .list-contact{
-      padding: 10px 0;
+      padding: 5px 15px;
       > a{
         padding-right: 20px;
+        img{
+          width: 20px;
+        }
       }
       span{
         padding-left: 3px;
@@ -36,24 +39,50 @@ header#header-vsh{
 
   /*box menu navigation header*/
   .box-menu-header{
-    background: $color-gray;
+    background: #a1a1a1;
     .box-menu-mobile{
       display: none;
     }
     .logo-main{
-      text-align: center;
       .logo-home{
-        color: $color-gold;
-        font-size: 23px;
+        color: $color-white;
+        font-size: 15px;
+        letter-spacing: -.5px;
+        float: left;
+        padding-right: 10px;
+        img{
+          width: 70px;
+          padding-top: 3px;
+        }
+      }
+
+      .box-search{
+        input{
+          height: 45px;
+          border: none;
+          border-radius: 0;
+          background: transparent;
+          box-shadow: none;
+          border-right: 1px solid rgba(255,255,255,.2);
+          border-left: 1px solid rgba(255,255,255,.2);
+          color: #fff;
+        }
+        span{
+          border: none;
+          background: transparent;
+          border-radius: 0;
+          cursor: pointer;
+          color: #fff;
+          font-size: 24px;
+        }
       }
     }
     .nav-logo-page{
       ul.box-main-menu{
-        margin-top: 17px;
+        float: right;
         li.list-menu{
           float: left;
           @include transition(0.3s);
-          border-bottom: 5px solid $color-gray-border;
 
           &:first-child, &:last-child{
             border: none;
@@ -61,17 +90,26 @@ header#header-vsh{
           &:last-child{
             a.item-menu {
               padding: 0;
-              padding-left: 20px;
+              color: #eebe5c;
+              img{
+                width: 35px;
+              }
             }
            }
-          &:hover, &.active {
-            border-color: $color-gold-border;
-          }
+
           a.item-menu{
             text-transform: uppercase;
             display: inline-block;
-            font-size: 23px;
-            padding: 7px 20px;
+            font-size: 15px;
+            padding: 12px 15px;
+            font-weight: 600;
+            color: $color-white;
+          }
+          &:hover, &.active {
+            text-decoration: none;
+            a{
+              color: #eebe5c;
+            }
           }
           a.btn-search{
             &:hover, &.active{
@@ -91,9 +129,9 @@ header#header-vsh{
             position: relative;
             span{
               position: absolute;
-              top: 0;
-              right: 6px;
-              font-size: 16px;
+              top: -1px;
+              right: 5px;
+              font-size: 13px;
             }
           }
         }
@@ -105,31 +143,31 @@ header#header-vsh{
 }
 
 .list-socials{
-  padding: 5px 0;
+  padding: 5px 15px;
   .gallery-new{
     display: none;
   }
   ul.box-socials{
-    height: 30px;
+    height: 20px;
     li.item-social{
       display: inline-block;
       padding-right: 15px;
       a.icon{
         display: block;
-        width: 31px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background: url("../images/list-icon-social.png") no-repeat;
         -webkit-background-size: auto 100%;
         background-size: auto 100%;
       }
       a.-fb{
-        background-position: -40px 0;
+        background-position: -27px 0;
       }
       a.-instagram{
-        background-position: -3px 0;
+        background-position: -2px 0;
       }
       a.-youtube{
-        background-position: -79px 0;
+        background-position: -53px 0;
       }
     }
   }

@@ -4,26 +4,26 @@ $devide_size_medium: 992px;
 $devide_size_large: 1200px;
 @import "mixin";
 /*
-* devide large > 1200px
+* device large > 1200px
 */
-@import "devide_large";
+@import "device_large";
 
 /*
-* devide medium > 992px and < 1200
+* device medium > 992px and < 1200
 */
-@import "devide_medium";
+@import "device_medium";
 
 /*
-* devide small > 768px and < 992px
+* device small > 768px and < 992px
 */
-@import "devide_small";
+@import "device_small";
 
 /*
-* devide extra small > 425px and < 768px
+* device extra small > 425px and < 768px
 */
-@import "devide_extra_small";
+@import "device_extra_small";
 
 /*
-* devide mobile <425px
+* device mobile <425px
 */
-@import "devide_mobile";
+@import "device_mobile";
