@@ -693,6 +693,127 @@ footer {
   .gallery-jewelry:hover .excerpt {
     display: block; }
 
+.sidebar-left-cat {
+  border-right: 2.5px solid #f6f6f6; }
+  .sidebar-left-cat .title-price {
+    text-transform: uppercase;
+    color: #dfb858;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 0 10px;
+    border-bottom: 1.5px solid #c1c1c1; }
+
+.box-category .title-tab ul.tab-title-product {
+  text-align: left;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left; }
+  .box-category .title-tab ul.tab-title-product li img {
+    width: 75px; }
+  .box-category .title-tab ul.tab-title-product li a {
+    background: none;
+    padding: 0;
+    margin: 0; }
+    .box-category .title-tab ul.tab-title-product li a span {
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      background: transparent;
+      color: #f0a750;
+      text-transform: initial;
+      font-weight: 100;
+      -webkit-transform: translate(-50%);
+      -moz-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+      transform: translate(-50%);
+      font-family: "MyriadPro-Light", sans-serif;
+      font-size: 12px;
+      white-space: nowrap;
+      cursor: pointer; }
+  .box-category .title-tab ul.tab-title-product li.active, .box-category .title-tab ul.tab-title-product li:hover {
+    background: transparent;
+    color: #f0a750;
+    border: 1px solid #f0a750; }
+.box-category .sort-box {
+  text-align: right; }
+  .box-category .sort-box .title {
+    padding-right: 20px; }
+
+.container-category .box-item-jewelry {
+  padding-bottom: 20px; }
+  .container-category .box-item-jewelry .name-product {
+    font-size: 17px;
+    font-weight: 700; }
+  .container-category .box-item-jewelry .price-sale .price {
+    font-size: 18px; }
+  .container-category .box-item-jewelry .price-sale .price-old {
+    font-size: 14px; }
+
+.box-right-detail .breadcrumb {
+  background: transparent;
+  margin-bottom: 0;
+  padding-left: 0; }
+  .box-right-detail .breadcrumb .breadcrumb-item {
+    text-transform: uppercase;
+    font-family: "MyriadPro-SemiboldCond", sans-serif; }
+    .box-right-detail .breadcrumb .breadcrumb-item a {
+      color: #000000; }
+  .box-right-detail .breadcrumb > li + li:before {
+    content: ">"; }
+.box-right-detail .title-product {
+  font-size: 24px;
+  font-family: "MyriadPro-SemiboldCond", sans-serif;
+  color: #bd8e26;
+  text-transform: uppercase; }
+.box-right-detail .code-product {
+  color: #aaaaaa; }
+.box-right-detail .name-price {
+  font-size: 30px;
+  color: #000000; }
+.box-right-detail .price {
+  font-size: 30px;
+  color: #bd8e26;
+  font-family: "MyriadPro-SemiboldCond", sans-serif; }
+.box-right-detail .price-old {
+  font-size: 18px;
+  color: #aaaaaa;
+  text-decoration: line-through;
+  font-family: "MyriadPro-SemiboldCond", sans-serif; }
+.box-right-detail .description .title-des {
+  color: #bd8e26;
+  font-size: 24px; }
+.box-right-detail .description .info-product {
+  color: #aaaaaa; }
+
+.box-service {
+  margin: 30px 0; }
+  .box-service .item-service {
+    border: 1px solid #000000;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin: auto; }
+
+table.list-info {
+  width: 60%; }
+  table.list-info > tbody > tr > td {
+    border-top: none;
+    padding: 4px; }
+  table.list-info td:first-child {
+    font-family: "MyriadPro-SemiboldCond", sans-serif; }
+
+.box-sales {
+  border: 1px solid #000000;
+  padding: 10px; }
+  .box-sales .title-sales {
+    font-family: "MyriadPro-SemiboldCond", sans-serif;
+    font-size: 24px; }
+
 /*setup size menu main in nav*/
 /*setup content center*/
 /*setup size menu main in nav on mobile*/
@@ -963,7 +1084,14 @@ footer {
   footer {
     background: #000000;
     color: #ffffff;
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  /*category*/
+  .sidebar-left-cat {
+    display: none; }
+
+  .box-category .sort-box {
+    display: none; } }
 /*
 * device mobile <425px
 */

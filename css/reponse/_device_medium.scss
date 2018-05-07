@@ -1,0 +1,30 @@
+
+@media screen
+and (min-width: $devide_size_medium)
+and (max-width: $devide_size_large)
+{
+  /*
+* devide medium > 992px and < 1200
+*/
+
+  header#header-vsh {
+    .box-menu-header {
+      .nav-logo-page {
+        ul.box-main-menu {
+          li.list-menu {
+            a.item-menu {
+              font-size: 13px;
+              padding: 12px 10px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .map-vietnam-sliver-house iframe{
+    height: 275px;
+  }
+
+}
