@@ -217,7 +217,32 @@
 
     <div class="row">
         <div class="col-md-6">
-            <img src="images/pic-detail.jpg" alt="">
+            <div class="carousel-products-detail owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="animated owl-item box-item-jewelry">
+                            <div class="item" data-hash="one">
+                                <img src="images/item1.png" alt="" class="image-jewelry">
+                            </div>
+                        </div>
+                        <div class="animated owl-item box-item-jewelry" >
+                            <div class="item" data-hash="two">
+                                <img src="images/item3.png" alt="" class="image-jewelry">
+                            </div>
+                        </div>
+                        <div class="animated owl-item box-item-jewelry" >
+                            <div class="item" data-hash="three">
+                                <img src="images/item2.png" alt="" class="image-jewelry">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-icon-mini">
+                <a style="color: #000000" href="#one">one</a>
+                <a style="color: #000000" href="#two">two</a>
+                <a style="color: #000000" href="#three">three</a>
+            </div>
         </div>
         <div class="col-md-6 box-right-detail">
             <nav aria-label="breadcrumb">
@@ -240,8 +265,8 @@
                 <div class="info-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolorem.</div>
             </div>
 
-            <a href="#" class="btn-yellow-booking">Đặt ngay</a>
-            <a href="#" class="btn-yellow-chat">Chat ngay</a>
+            <a href="#" class="btn-yellow-chat"><i class="icon-chat"></i>Chat ngay</a>
+            <a href="#" class="btn-yellow-booking"><i class="icon-cart"></i>Đặt ngay</a>
 
         </div>
     </div>
@@ -249,6 +274,7 @@
     <div class="row box-service">
         <div class="col-md-4">
             <div class="item-service">
+                <i class="icon-diamond"></i>
                 Đánh sáng <br>
                 miễn phí trọn đời
             </div>
@@ -256,6 +282,7 @@
 
         <div class="col-md-4">
             <div class="item-service">
+                <i class="icon-truck"></i>
                 Freeship <br>
                 đơn hàng trên 300k
             </div>
@@ -263,6 +290,7 @@
 
         <div class="col-md-4">
             <div class="item-service">
+                <i class="icon-medal"></i>
                 Chính sách <br>
                 bảo hành, đổi trả
             </div>
@@ -282,7 +310,7 @@
                 </tr>
                 <tr>
                     <td>Kích thước</td>
-                    <td>Dooley</td>
+                    <td>Dooley Dooley Dooley Dooley</td>
                 </tr>
                 <tr>
                     <td>Đính đá</td>
@@ -863,6 +891,27 @@
             }
         });
         /*slider product*/
+
+
+        /*slider product detail*/
+        $(".carousel-products-detail").owlCarousel({
+            animateOut: 'fadeOut',
+            animateIn: 'slideInLeft',
+            items:1,
+            margin:0,
+            stagePadding: 0,
+            smartSpeed: 1000,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: false,
+            autoplayTimeout: 3000,
+            slideBy: 1,
+            URLhashListener:true,
+            autoplayHoverPause:true,
+            startPosition: 'URLHash'
+        });
+        /*slider product detail*/
 
 
 

@@ -757,14 +757,17 @@ footer {
 .box-right-detail .breadcrumb {
   background: transparent;
   margin-bottom: 0;
-  padding-left: 0; }
+  padding: 15px 15px;
+  padding-left: 0;
+  font-size: 16px; }
   .box-right-detail .breadcrumb .breadcrumb-item {
     text-transform: uppercase;
     font-family: "MyriadPro-SemiboldCond", sans-serif; }
     .box-right-detail .breadcrumb .breadcrumb-item a {
       color: #000000; }
   .box-right-detail .breadcrumb > li + li:before {
-    content: ">"; }
+    content: ">";
+    color: #000000; }
 .box-right-detail .title-product {
   font-size: 24px;
   font-family: "MyriadPro-SemiboldCond", sans-serif;
@@ -789,15 +792,50 @@ footer {
   font-size: 24px; }
 .box-right-detail .description .info-product {
   color: #aaaaaa; }
+.box-right-detail .btn-yellow-booking, .box-right-detail .btn-yellow-chat {
+  color: #fff;
+  border-radius: 0;
+  margin-right: 20px;
+  font-size: 17px;
+  width: 170px;
+  text-align: center;
+  position: relative;
+  float: right; }
+.box-right-detail i.icon-cart {
+  display: inline-block;
+  background: url("../images/icon-cart-detail.png") no-repeat center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5px;
+  top: 2px; }
+.box-right-detail i.icon-chat {
+  display: inline-block;
+  background: url("../images/icon-chat.png") no-repeat center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5px;
+  top: 2px; }
 
 .box-service {
   margin: 30px 0; }
   .box-service .item-service {
-    border: 1px solid #000000;
+    border: 1px solid #aaaaaa;
     text-align: center;
     width: 200px;
     padding: 10px;
-    margin: auto; }
+    margin: auto;
+    text-transform: uppercase; }
+    .box-service .item-service i[class*="icon-"] {
+      display: block;
+      height: 26px; }
+    .box-service .item-service .icon-diamond {
+      background: url("../images/icon-diamond.png") no-repeat center; }
+    .box-service .item-service .icon-truck {
+      background: url("../images/icon-truck.png") no-repeat center; }
+    .box-service .item-service .icon-medal {
+      background: url("../images/icon-medal.png") no-repeat center; }
 
 table.list-info {
   width: 60%; }
@@ -805,14 +843,16 @@ table.list-info {
     border-top: none;
     padding: 4px; }
   table.list-info td:first-child {
-    font-family: "MyriadPro-SemiboldCond", sans-serif; }
+    font-weight: 700; }
 
 .box-sales {
-  border: 1px solid #000000;
+  border: 1px solid #aaaaaa;
   padding: 10px; }
   .box-sales .title-sales {
     font-family: "MyriadPro-SemiboldCond", sans-serif;
     font-size: 24px; }
+  .box-sales .list-sales {
+    font-weight: 700; }
 
 /*setup size menu main in nav*/
 /*setup content center*/
