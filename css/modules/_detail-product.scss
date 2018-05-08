@@ -1,4 +1,24 @@
-.box-right-detail{
+.carousel-products-detail{
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.view-detail{
+  .box-icon-mini{
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    .item{
+      text-align: center;
+    }
+    img{
+      width: 50px;
+      display: inline-block;
+    }
+  }
+}
+.box-detail{
   .breadcrumb{
     background: transparent;
     margin-bottom: 0;
@@ -27,7 +47,8 @@
   .code-product{
     color: #aaaaaa;
   }
-
+}
+.box-right-detail{
   .name-price{
     font-size: 30px;
     color: $color-black;

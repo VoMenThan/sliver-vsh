@@ -11,6 +11,15 @@ and (max-width: $devide_size_mobile)
     }
   }
 
+  /*slider*/
+  .view-detail {
+    .box-icon-mini {
+      width: 70%;
+      img{
+        width: 40px;
+      }
+    }
+  }
 
 
 }

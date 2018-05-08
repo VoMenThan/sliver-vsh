@@ -24,6 +24,7 @@
 
     <!--animation-->
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <!--css style-->
     <link href="css/styles.css" rel="stylesheet">
 
@@ -213,143 +214,271 @@
     </header>
 <!--HEADER end-->
 
-<div class="container">
 
-    <div class="row">
-        <div class="col-md-6">
-            <div class="carousel-products-detail owl-carousel owl-theme owl-loaded owl-drag">
-                <div class="owl-stage-outer">
-                    <div class="owl-stage">
-                        <div class="animated owl-item box-item-jewelry">
-                            <div class="item" data-hash="one">
-                                <img src="images/item1.png" alt="" class="image-jewelry">
-                            </div>
+<div class="container-fluid" style="background: #fff">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 view-detail">
+                <div class="box-detail res-mobile">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="#">Trang sức bạc</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Lắc</li>
+                        </ol>
+                    </nav>
+
+                    <div class="title-product">LẮC TAY CHIM GỎ KIẾNG ĐINH ĐÁ TƯƠI TRẺ</div>
+                    <div class="code-product">SPB0033458</div>
+                </div>
+
+                <div class="carousel-products-detail owl-carousel owl-theme">
+                    <div class="item"  data-hash="1">
+                        <a data-fancybox="gallery" href="images/pic-detail.jpg">
+                            <img src="images/pic-detail.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="item" data-hash="2">
+                        <a data-fancybox="gallery" href="images/pic-detail1.png">
+                            <img src="images/pic-detail1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item" data-hash="3">
+                        <div class="item" data-hash="2">
+                            <a data-fancybox="gallery" href="images/pic-detail2.png">
+                                <img src="images/pic-detail2.png" alt="">
+                            </a>
                         </div>
-                        <div class="animated owl-item box-item-jewelry" >
-                            <div class="item" data-hash="two">
-                                <img src="images/item3.png" alt="" class="image-jewelry">
-                            </div>
-                        </div>
-                        <div class="animated owl-item box-item-jewelry" >
-                            <div class="item" data-hash="three">
-                                <img src="images/item2.png" alt="" class="image-jewelry">
-                            </div>
+                    </div>
+                    <div class="item" data-hash="4">
+                        <div class="item" data-hash="2">
+                            <a data-fancybox="gallery" href="images/pic-detail3.png">
+                                <img src="images/pic-detail3.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <div class="box-icon-mini owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="#1"><img src="images/pic-detail.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#2"><img src="images/pic-detail1.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#3"><img src="images/pic-detail2.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#4"><img src="images/pic-detail3.png" alt=""></a>
+                    </div>
+                </div>
             </div>
-            <div class="box-icon-mini">
-                <a style="color: #000000" href="#one">one</a>
-                <a style="color: #000000" href="#two">two</a>
-                <a style="color: #000000" href="#three">three</a>
+            <div class="col-md-6 box-right-detail">
+                <div class="box-detail res-desktop">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="#">Trang sức bạc</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Lắc</li>
+                        </ol>
+                    </nav>
+
+                    <div class="title-product">LẮC TAY CHIM GỎ KIẾNG ĐINH ĐÁ TƯƠI TRẺ</div>
+                    <div class="code-product">SPB0033458</div>
+                </div>
+
+                <div class="price-sale res-desktop">
+                    <span class="name-price">Giá: </span>
+                    <span class="price">1.500.000 vnđ</span>
+                    <span class="price-old">2.500.000 vnđ</span>
+                </div>
+                <div class="description res-desktop">
+                    <div class="title-des">Mô tả sản phẩm</div>
+                    <div class="info-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolorem.</div>
+                </div>
+
+                <div class="box-mobile-tab res-mobile">
+                    <ul class="nav nav-tabs tab-title-product" role="tablist">
+                        <li class="active">
+                            <a href="#description" role="tab" data-toggle="tab">Mô tả</a>
+                        </li>
+                        <li>
+                            <a href="#number" role="tab" data-toggle="tab">Thông số</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="description">
+                            <div class="info-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolorem.</div>
+                        </div>
+
+                        <div class="tab-pane" id="number">
+                            <table class="table list-info">
+                                <tr>
+                                    <td>Tuổi bạc</td>
+                                    <td>Doe</td>
+                                </tr>
+                                <tr>
+                                    <td>Chế tác</td>
+                                    <td>Moe</td>
+                                </tr>
+                                <tr>
+                                    <td>Kích thước</td>
+                                    <td>Dooley Dooley Dooley Dooley</td>
+                                </tr>
+                                <tr>
+                                    <td>Đính đá</td>
+                                    <td>Dooley</td>
+                                </tr>
+                                <tr>
+                                    <td>Loại đá</td>
+                                    <td>Dooley</td>
+                                </tr>
+                                <tr>
+                                    <td>Màu đá</td>
+                                    <td>Dooley</td>
+                                </tr>
+                                <tr>
+                                    <td>Hoa văn</td>
+                                    <td>Dooley</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-button res-desktop">
+                    <a href="#" class="btn-yellow-chat"><i class="icon-chat"></i>Chat ngay</a>
+                    <a href="#" class="btn-yellow-booking"><i class="icon-cart"></i>Đặt ngay</a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="row box-service res-desktop">
+            <div class="col-md-4">
+                <div class="item-service">
+                    <i class="icon-diamond"></i>
+                    Đánh sáng <br>
+                    miễn phí trọn đời
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item-service">
+                    <i class="icon-truck"></i>
+                    Freeship <br>
+                    đơn hàng trên 300k
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item-service">
+                    <i class="icon-medal"></i>
+                    Chính sách <br>
+                    bảo hành, đổi trả
+                </div>
             </div>
         </div>
-        <div class="col-md-6 box-right-detail">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                    <li class="breadcrumb-item"><a href="#">Trang sức bạc</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Lắc</li>
-                </ol>
-            </nav>
 
-            <div class="title-product">LẮC TAY CHIM GỎ KIẾNG ĐINH ĐÁ TƯƠI TRẺ</div>
-            <div class="code-product">SPB0033458</div>
-            <div class="price-sale">
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table list-info res-desktop">
+                    <tr>
+                        <td>Tuổi bạc</td>
+                        <td>Doe</td>
+                    </tr>
+                    <tr>
+                        <td>Chế tác</td>
+                        <td>Moe</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước</td>
+                        <td>Dooley Dooley Dooley Dooley</td>
+                    </tr>
+                    <tr>
+                        <td>Đính đá</td>
+                        <td>Dooley</td>
+                    </tr>
+                    <tr>
+                        <td>Loại đá</td>
+                        <td>Dooley</td>
+                    </tr>
+                    <tr>
+                        <td>Màu đá</td>
+                        <td>Dooley</td>
+                    </tr>
+                    <tr>
+                        <td>Hoa văn</td>
+                        <td>Dooley</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <div class="box-sales">
+                    <div class="title-sales">Khuyến Mãi</div>
+
+                    <ul class="list-sales">
+                        <li>* Tặng phiếu mua hàng 300.000vnđ</li>
+                        <li>* Trả góp lãi suất 0%</li>
+                        <li>* Hỗ trợ đánh sáng trọn đời</li>
+                        <li>* Giảm tới 2% giá hóa đơn cho đơn hàng sau,</li>
+                        <li>* Trả góp lãi suât 0% với thẻ tín dụng HSBC, Sacombank, ANZ, Shinhan Bank,
+                            CitiBank, VPBank, FE Credit, Techcombank, Standard Chartered (chi tiết)</li>
+                        <li>* Miễn phí cà thẻ (ngoại trừ AMEX, UnionPay & JCB)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box-right-detail">
+            <div class="price-sale res-mobile">
                 <span class="name-price">Giá: </span>
                 <span class="price">1.500.000 vnđ</span>
                 <span class="price-old">2.500.000 vnđ</span>
             </div>
-            <div class="description">
-                <div class="title-des">Mô tả sản phẩm</div>
-                <div class="info-product">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolorem.</div>
-            </div>
 
-            <a href="#" class="btn-yellow-chat"><i class="icon-chat"></i>Chat ngay</a>
-            <a href="#" class="btn-yellow-booking"><i class="icon-cart"></i>Đặt ngay</a>
-
-        </div>
-    </div>
-
-    <div class="row box-service">
-        <div class="col-md-4">
-            <div class="item-service">
-                <i class="icon-diamond"></i>
-                Đánh sáng <br>
-                miễn phí trọn đời
+            <div class="box-button res-mobile">
+                <a href="#" class="btn-yellow-booking"><i class="icon-cart"></i>Đặt ngay</a>
+                <a href="#" class="btn-yellow-chat"><i class="icon-chat"></i>Chat ngay</a>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="item-service">
-                <i class="icon-truck"></i>
-                Freeship <br>
-                đơn hàng trên 300k
-            </div>
-        </div>
 
-        <div class="col-md-4">
-            <div class="item-service">
-                <i class="icon-medal"></i>
-                Chính sách <br>
-                bảo hành, đổi trả
+        <div class="row box-service res-mobile">
+            <div class="col-md-4 col-sm-4">
+                <div class="item-service">
+                    <i class="icon-diamond"></i>
+                    Đánh sáng <br>
+                    miễn phí trọn đời
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="item-service">
+                    <i class="icon-truck"></i>
+                    Freeship <br>
+                    đơn hàng trên 300k
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="item-service">
+                    <i class="icon-medal"></i>
+                    Chính sách <br>
+                    bảo hành, đổi trả
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-6">
-            <table class="table list-info">
-                <tr>
-                    <td>Tuổi bạc</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>Chế tác</td>
-                    <td>Moe</td>
-                </tr>
-                <tr>
-                    <td>Kích thước</td>
-                    <td>Dooley Dooley Dooley Dooley</td>
-                </tr>
-                <tr>
-                    <td>Đính đá</td>
-                    <td>Dooley</td>
-                </tr>
-                <tr>
-                    <td>Loại đá</td>
-                    <td>Dooley</td>
-                </tr>
-                <tr>
-                    <td>Màu đá</td>
-                    <td>Dooley</td>
-                </tr>
-                <tr>
-                    <td>Hoa văn</td>
-                    <td>Dooley</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="col-md-6">
-            <div class="box-sales">
-                <div class="title-sales">Khuyến Mãi</div>
-
-                <ul class="list-sales">
-                    <li>* Tặng phiếu mua hàng 300.000vnđ</li>
-                    <li>* Trả góp lãi suất 0%</li>
-                    <li>* Hỗ trợ đánh sáng trọn đời</li>
-                    <li>* Giảm tới 2% giá hóa đơn cho đơn hàng sau,</li>
-                    <li>* Trả góp lãi suât 0% với thẻ tín dụng HSBC, Sacombank, ANZ, Shinhan Bank,
-                        CitiBank, VPBank, FE Credit, Techcombank, Standard Chartered (chi tiết)</li>
-                    <li>* Miễn phí cà thẻ (ngoại trừ AMEX, UnionPay & JCB)</li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-
-
+</div>
+<div class="container">
     <!--LOVE PRODUCT-->
     <div class="row">
         <div class="col-md-12 title-tab">
@@ -760,6 +889,7 @@
 <script src="js/owl.carousel.min.js"></script>
 
 <script src="js/jquery.matchHeight-min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 
 <script type="text/javascript">
     /*math height*/
@@ -895,8 +1025,6 @@
 
         /*slider product detail*/
         $(".carousel-products-detail").owlCarousel({
-            animateOut: 'fadeOut',
-            animateIn: 'slideInLeft',
             items:1,
             margin:0,
             stagePadding: 0,
@@ -904,13 +1032,23 @@
             loop: true,
             nav: false,
             dots: false,
-            autoplay: false,
-            autoplayTimeout: 3000,
             slideBy: 1,
             URLhashListener:true,
             autoplayHoverPause:true,
             startPosition: 'URLHash'
         });
+
+        $(".box-icon-mini").owlCarousel({
+            items:3,
+            margin:0,
+            stagePadding: 0,
+            smartSpeed: 1000,
+            loop: true,
+            nav: false,
+            dots: false,
+            slideBy: 1
+        });
+
         /*slider product detail*/
 
 

@@ -329,7 +329,7 @@ header#header-vsh {
           text-transform: uppercase;
           display: inline-block;
           font-size: 15px;
-          padding: 12px 15px;
+          padding: 12px 12px;
           font-weight: 600;
           color: #ffffff; }
         header#header-vsh .box-menu-header .nav-logo-page ul.box-main-menu li.list-menu:hover, header#header-vsh .box-menu-header .nav-logo-page ul.box-main-menu li.list-menu.active {
@@ -754,27 +754,43 @@ footer {
   .container-category .box-item-jewelry .price-sale .price-old {
     font-size: 14px; }
 
-.box-right-detail .breadcrumb {
+.carousel-products-detail {
+  margin: auto;
+  margin-top: 20px;
+  width: 80%; }
+
+.view-detail .box-icon-mini {
+  width: 50%;
+  margin: auto;
+  margin-top: 15px; }
+  .view-detail .box-icon-mini .item {
+    text-align: center; }
+  .view-detail .box-icon-mini img {
+    width: 50px;
+    display: inline-block; }
+
+.box-detail .breadcrumb {
   background: transparent;
   margin-bottom: 0;
   padding: 15px 15px;
   padding-left: 0;
   font-size: 16px; }
-  .box-right-detail .breadcrumb .breadcrumb-item {
+  .box-detail .breadcrumb .breadcrumb-item {
     text-transform: uppercase;
     font-family: "MyriadPro-SemiboldCond", sans-serif; }
-    .box-right-detail .breadcrumb .breadcrumb-item a {
+    .box-detail .breadcrumb .breadcrumb-item a {
       color: #000000; }
-  .box-right-detail .breadcrumb > li + li:before {
+  .box-detail .breadcrumb > li + li:before {
     content: ">";
     color: #000000; }
-.box-right-detail .title-product {
+.box-detail .title-product {
   font-size: 24px;
   font-family: "MyriadPro-SemiboldCond", sans-serif;
   color: #bd8e26;
   text-transform: uppercase; }
-.box-right-detail .code-product {
+.box-detail .code-product {
   color: #aaaaaa; }
+
 .box-right-detail .name-price {
   font-size: 30px;
   color: #000000; }
@@ -1131,7 +1147,30 @@ table.list-info {
     display: none; }
 
   .box-category .sort-box {
-    display: none; } }
+    display: none; }
+
+  /*detail product*/
+  .box-right-detail .btn-yellow-booking {
+    float: none; }
+  .box-right-detail .btn-yellow-chat {
+    float: none; }
+
+  /*box tab*/
+  .box-mobile-tab .tab-title-product {
+    text-align: center;
+    border: none;
+    margin: 10px 0; }
+    .box-mobile-tab .tab-title-product li {
+      display: inline-block;
+      float: none; }
+      .box-mobile-tab .tab-title-product li a {
+        color: #000; }
+      .box-mobile-tab .tab-title-product li.active > a:focus, .box-mobile-tab .tab-title-product li.active > a:hover, .box-mobile-tab .tab-title-product li.active > a {
+        border: none;
+        border-bottom: 2px solid #bd8e26; }
+
+  table.list-info {
+    width: 100%; } }
 /*
 * device mobile <425px
 */
