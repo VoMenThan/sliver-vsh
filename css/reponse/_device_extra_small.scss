@@ -33,9 +33,13 @@ and (max-width: $devide_size_small)
         padding-left: 10px;
       }
       ul.dropdown-menu{
-        background: #000;
+        background: #bd8e26;
+        border-radius: 0;
         box-shadow: none;
         border: 0;
+        a{
+          color: #fff;
+        }
       }
     }
     .title-tab {
@@ -240,7 +244,7 @@ and (max-width: $devide_size_small)
       width: 180px;
     }
     .title-text{
-      font-size: 25px;
+      font-size: 20px;
     }
   }
   .container-jewelry {
@@ -249,15 +253,15 @@ and (max-width: $devide_size_small)
       margin-bottom: 10px;
       margin-top: 10px;
       .name-product{
-        font-size: 20px;
+        font-size: 17px;
       }
       .price-sale {
         .price{
-          font-size: 26px;
+          font-size: 20px;
 
         }
         .price-old{
-          font-size: 20px;
+          font-size: 16px;
         }
       }
     }

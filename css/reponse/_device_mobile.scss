@@ -2,7 +2,7 @@
 and (max-width: $devide_size_mobile)
 {
   /*
-* devide mobile <425px
+* devide mobile <480px
 */
   header#header-vsh {
     .bar-top-header {
@@ -47,6 +47,20 @@ and (max-width: $devide_size_mobile)
     right: 15px;
   }
 
+
+  /*DETAIL PRODUCT*/
+  header#header-vsh {
+    .box-menu-header {
+      .logo-main {
+        .logo-home{
+          font-size: 18px;
+          img{
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
 
 }
 
@@ -101,5 +115,62 @@ and (max-width: 425px)
       }
     }
   }
+
+  /*slider*/
+  .view-detail {
+    .box-icon-mini {
+      width: 70%;
+      img{
+        width: 40px;
+      }
+    }
+  }
+
+  .box-detail {
+    .breadcrumb{
+      padding: 5px;
+      font-size: 14px;
+    }
+    .title-product{
+      font-size: 19px;
+    }
+  }
+  .box-mobile-tab {
+    .tab-title-product {
+      li > a{
+        padding: 5px;
+      }
+    }
+  }
+
+  .box-right-detail {
+    .name-price{
+      font-size: 18px;
+    }
+    .price{
+      font-size: 24px;
+    }
+  }
+
+  .box-right-detail {
+    .btn-yellow-booking, .btn-yellow-chat{
+      margin-right: 0;
+      font-size: 17px;
+      width: 128px;
+      text-align: right;
+    }
+  }
+/*box service*/
+  .box-service {
+    div[class*="col-"]{
+      padding: 0;
+    }
+    .item-service{
+      width: 80px;
+      padding: 2px;
+      font-size: 12px;
+    }
+  }
+
 
 }
