@@ -217,7 +217,7 @@
 
 <div class="container-fluid" style="background: #fff">
     <div class="container">
-        <div class="row">
+        <div class="row box-detail-product">
             <div class="col-md-6 view-detail">
                 <div class="box-detail res-mobile">
                     <nav aria-label="breadcrumb">
@@ -234,25 +234,25 @@
 
                 <div class="carousel-products-detail owl-carousel owl-theme">
                     <div class="item"  data-hash="1">
-                        <a data-fancybox="gallery" href="images/pic-detail.jpg">
+                        <a data-fancybox="gallery-detail" href="images/pic-detail.jpg">
                             <img src="images/pic-detail.jpg" alt="">
                         </a>
                     </div>
                     <div class="item" data-hash="2">
-                        <a data-fancybox="gallery" href="images/pic-detail1.png">
+                        <a data-fancybox="gallery-detail" href="images/pic-detail1.png">
                             <img src="images/pic-detail1.png" alt="">
                         </a>
                     </div>
                     <div class="item" data-hash="3">
                         <div class="item" data-hash="2">
-                            <a data-fancybox="gallery" href="images/pic-detail2.png">
+                            <a data-fancybox="gallery-detail" href="images/pic-detail2.png">
                                 <img src="images/pic-detail2.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="item" data-hash="4">
                         <div class="item" data-hash="2">
-                            <a data-fancybox="gallery" href="images/pic-detail3.png">
+                            <a data-fancybox="gallery-detail" href="images/pic-detail3.png">
                                 <img src="images/pic-detail3.png" alt="">
                             </a>
                         </div>
@@ -347,19 +347,16 @@
                     </div>
                 </div>
 
-                <div class="box-button res-desktop">
-                    <a href="#" class="btn-yellow-chat"><i class="icon-chat"></i>Chat ngay</a>
-                    <a href="#" class="btn-yellow-booking"><i class="icon-cart"></i>Đặt ngay</a>
-                </div>
-
-
             </div>
-
+            <div class="box-button res-desktop clearfix">
+                <a href="#" class="btn-yellow-chat"><i class="icon-chat"></i>Chat ngay</a>
+                <a href="#" class="btn-yellow-booking"><i class="icon-cart"></i>Đặt ngay</a>
+            </div>
 
         </div>
 
         <div class="row box-service res-desktop">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="item-service">
                     <i class="icon-diamond"></i>
                     Đánh sáng <br>
@@ -367,7 +364,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="item-service">
                     <i class="icon-truck"></i>
                     Freeship <br>
@@ -375,7 +372,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="item-service">
                     <i class="icon-medal"></i>
                     Chính sách <br>
@@ -1007,7 +1004,7 @@
                     nav: false
                 },
                 768: {
-                    items: 2,
+                    items: 1,
                     nav: false
                 },
                 1000: {
@@ -1041,6 +1038,7 @@
         });
 
         $(".box-icon-mini").owlCarousel({
+            center: true,
             items:3,
             margin:0,
             stagePadding: 0,

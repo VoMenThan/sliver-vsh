@@ -808,31 +808,41 @@ footer {
   font-size: 24px; }
 .box-right-detail .description .info-product {
   color: #aaaaaa; }
-.box-right-detail .btn-yellow-booking, .box-right-detail .btn-yellow-chat {
+
+.box-detail-product {
+  position: relative; }
+
+.box-button .btn-yellow-booking, .box-button .btn-yellow-chat {
   color: #fff;
+  background: #bd8e26;
   border-radius: 0;
   margin-right: 20px;
   font-size: 17px;
   width: 170px;
   text-align: center;
   position: relative;
-  float: right; }
-.box-right-detail i.icon-cart {
+  float: right;
+  padding: 12px; }
+.box-button i.icon-cart {
   display: inline-block;
   background: url("../images/icon-cart-detail.png") no-repeat center;
   width: 30px;
   height: 30px;
   position: absolute;
   left: 5px;
-  top: 2px; }
-.box-right-detail i.icon-chat {
+  top: 9px; }
+.box-button i.icon-chat {
   display: inline-block;
   background: url("../images/icon-chat.png") no-repeat center;
   width: 30px;
   height: 30px;
   position: absolute;
   left: 5px;
-  top: 2px; }
+  top: 9px; }
+.box-button.res-desktop {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 .box-service {
   margin: 30px 0; }
@@ -920,16 +930,15 @@ table.list-info {
 /*
 * device extra small > 425px and < 768px
 */
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  /*
-* devide extra small > 425px and < 768px
-*/ }
-@media (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .box-button.res-desktop {
+    position: static; } }
+@media screen and (max-width: 992px) {
   .list-socials ul.box-socials {
     height: auto; }
 
   header#header-vsh .bar-top-header {
-    background: #bd8e26; }
+    background: #737373; }
   header#header-vsh .gallery-new {
     border: none;
     background: transparent;
@@ -942,7 +951,7 @@ table.list-info {
       border: none;
       padding-left: 10px; }
     header#header-vsh .gallery-new ul.dropdown-menu {
-      background: #bd8e26;
+      background: #737373;
       border-radius: 0;
       box-shadow: none;
       border: 0; }
@@ -956,7 +965,7 @@ table.list-info {
       padding: 5px 0;
       text-align: center; }
       header#header-vsh .box-menu-header .logo-main .logo-home {
-        color: #bd8e24;
+        color: #737373;
         font-family: "MyriadPro-SemiboldCond", sans-serif;
         float: none;
         height: auto;
@@ -994,7 +1003,7 @@ table.list-info {
     float: left;
     width: 25%;
     text-align: center;
-    background: #f8f2e6;
+    background: #f2f2f2;
     border: 1px solid #dddddd;
     padding: 10px;
     font-size: 24px;
@@ -1006,7 +1015,7 @@ table.list-info {
       color: #ffffff;
       font-size: 20px; }
   ul.box-menu-mobile a.item-menu-mb {
-    color: #bd8e26;
+    color: #737373;
     display: block;
     position: relative; }
   ul.box-menu-mobile i {
@@ -1037,7 +1046,7 @@ table.list-info {
       text-transform: uppercase;
       text-align: left;
       padding: 5px 10px;
-      background: #bd8e26;
+      background: #737373;
       color: #ffffff;
       border: none; }
 
@@ -1053,7 +1062,7 @@ table.list-info {
       text-align: left;
       padding: 5px 10px;
       background: transparent;
-      color: #bd8e26;
+      color: #737373;
       border: 1px solid #dddddd; }
 
   .sort {
@@ -1068,7 +1077,7 @@ table.list-info {
       text-align: left;
       padding: 5px 10px;
       background: transparent;
-      color: #bd8e26;
+      color: #737373;
       border: 1px solid #dddddd; }
 
   .dropdown-toggle .caret-bottom {
@@ -1119,7 +1128,10 @@ table.list-info {
       .container-jewelry .box-item-jewelry .price-sale .price {
         font-size: 20px; }
       .container-jewelry .box-item-jewelry .price-sale .price-old {
-        font-size: 20px; }
+        font-size: 16px; }
+
+  .box-service .item-service {
+    width: 100%; }
 
   /*banner bottom*/
   .banner-contact-slider-house {
@@ -1154,9 +1166,13 @@ table.list-info {
 
   /*detail product*/
   .box-right-detail .btn-yellow-booking {
-    float: none; }
+    float: none;
+    width: 48%;
+    margin: 0; }
   .box-right-detail .btn-yellow-chat {
-    float: none; }
+    float: right;
+    width: 48%;
+    margin: 0; }
 
   /*box tab*/
   .box-mobile-tab .tab-title-product {
@@ -1170,7 +1186,7 @@ table.list-info {
         color: #000; }
       .box-mobile-tab .tab-title-product li.active > a:focus, .box-mobile-tab .tab-title-product li.active > a:hover, .box-mobile-tab .tab-title-product li.active > a {
         border: none;
-        border-bottom: 2px solid #bd8e26; }
+        border-bottom: 2px solid #737373; }
 
   table.list-info {
     width: 100%; } }

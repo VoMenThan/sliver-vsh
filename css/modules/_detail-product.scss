@@ -73,8 +73,16 @@
       color: #aaaaaa;
     }
   }
+
+}
+
+.box-detail-product{
+  position: relative;
+}
+.box-button{
   .btn-yellow-booking, .btn-yellow-chat{
     color: #fff;
+    background: #bd8e26;
     border-radius: 0;
     margin-right: 20px;
     font-size: 17px;
@@ -82,6 +90,7 @@
     text-align: center;
     position: relative;
     float: right;
+    padding: 12px;
   }
   i.icon-cart{
     display: inline-block;
@@ -90,7 +99,7 @@
     height: 30px;
     position: absolute;
     left: 5px;
-    top: 2px;
+    top: 9px;
   }
   i.icon-chat{
     display: inline-block;
@@ -99,9 +108,19 @@
     height: 30px;
     position: absolute;
     left: 5px;
-    top: 2px;
+    top: 9px;
+  }
+  &.res-desktop{
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
+
+
+
+
+
 
 .box-service{
   margin: 30px 0;

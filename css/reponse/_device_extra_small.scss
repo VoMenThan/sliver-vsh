@@ -1,16 +1,9 @@
-@media screen
-and (min-width: $devide_size_mobile)
-and (max-width: $devide_size_small)
-{
-  /*
-* devide extra small > 425px and < 768px
-*/
-
-
+@media screen and (max-width: 992px){
+  .box-button.res-desktop{
+    position: static;
+  }
 }
-@media (max-width: 768px)
-{
-
+@media screen and (max-width: 992px){
   .list-socials {
     ul.box-socials{
       height: auto;
@@ -18,7 +11,7 @@ and (max-width: $devide_size_small)
   }
   header#header-vsh {
     .bar-top-header{
-      background: #bd8e26;
+      background: #737373;
     }
     .gallery-new{
       border: none;
@@ -33,7 +26,7 @@ and (max-width: $devide_size_small)
         padding-left: 10px;
       }
       ul.dropdown-menu{
-        background: #bd8e26;
+        background: #737373;
         border-radius: 0;
         box-shadow: none;
         border: 0;
@@ -53,7 +46,7 @@ and (max-width: $devide_size_small)
         padding: 5px 0;
         text-align: center;
         .logo-home{
-          color: #bd8e24;
+          color: #737373;
           font-family: $main-b;
           float: none;
           height: auto;
@@ -111,7 +104,7 @@ and (max-width: $devide_size_small)
       float: left;
       width: 25%;
       text-align: center;
-      background: #f8f2e6;
+      background: #f2f2f2;
       border: 1px solid $color-gray-menu-br;
       padding: 10px;
       font-size: 24px;
@@ -125,7 +118,7 @@ and (max-width: $devide_size_small)
       }
     }
     a.item-menu-mb{
-      color: #bd8e26;
+      color: #737373;
       display: block;
       position: relative;
     }
@@ -164,7 +157,7 @@ and (max-width: $devide_size_small)
       text-transform: uppercase;
       text-align: left;
       padding: 5px 10px;
-      background: #bd8e26;
+      background: #737373;
       color: $color-white;
       border: none;
     }
@@ -182,7 +175,7 @@ and (max-width: $devide_size_small)
       text-align: left;
       padding: 5px 10px;
       background: transparent;
-      color: #bd8e26;
+      color: #737373;
       border: 1px solid $color-gray-menu-br;
     }
   }
@@ -198,7 +191,7 @@ and (max-width: $devide_size_small)
       text-align: left;
       padding: 5px 10px;
       background: transparent;
-      color: #bd8e26;
+      color: #737373;
       border: 1px solid $color-gray-menu-br;
     }
   }
@@ -267,6 +260,12 @@ and (max-width: $devide_size_small)
     }
   }
 
+  .box-service {
+    .item-service {
+      width: 100%;
+    }
+  }
+
   /*banner bottom*/
   .banner-contact-slider-house {
     background: $color-black;
@@ -319,10 +318,14 @@ and (max-width: $devide_size_small)
   .box-right-detail {
     .btn-yellow-booking{
       float: none;
+      width: 48%;
+      margin: 0;
     }
     .btn-yellow-chat
     {
-      float: none;
+      float: right;
+      width: 48%;
+      margin: 0;
     }
   }
 
@@ -342,7 +345,7 @@ and (max-width: $devide_size_small)
         &.active{
           >a:focus, >a:hover, >a{
             border: none;
-            border-bottom: 2px solid #bd8e26;
+            border-bottom: 2px solid #737373;
           }
         }
       }
