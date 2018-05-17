@@ -1,3 +1,9 @@
+.box-menu-header, .bar-top-header{
+  .container{
+    width: 100%;
+  }
+}
+
 .carousel-products-detail{
   margin: auto;
   margin-top: 20px;
@@ -170,4 +176,8 @@ table.list-info{
   .list-sales{
     font-weight: 700;
   }
+}
+
+.language-mobile{
+  float: right;
 }

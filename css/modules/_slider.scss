@@ -22,7 +22,7 @@
     border: none;
     background: $color-gray-button;
     @include radius(3px);
-    padding: 10px;
+    padding: 5px;
     position: absolute;
     top: calc(50% - 7px);
   }
@@ -30,8 +30,8 @@
     left: 10px;
     i.prev{
       display: block;
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
       background: url("../images/icon-arrow-down.png") no-repeat  center center;
       background-size: 100%;
       @include rotate(90deg);
@@ -41,8 +41,8 @@
     right: 10px;
     i.next{
       display: block;
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
       background: url("../images/icon-arrow-down.png") no-repeat  center center;
       background-size: 100%;
       @include rotate(-90deg);

@@ -4,6 +4,15 @@ and (max-width: $devide_size_mobile)
   /*
 * devide mobile <480px
 */
+  .container-jewelry {
+    .box-item-jewelry {
+      .hot-prodcut{
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+      }
+    }
+  }
   header#header-vsh {
     .bar-top-header {
       .list-contact {
@@ -173,4 +182,19 @@ and (max-width: 425px)
   }
 
 
+}
+
+@media screen
+and (max-width: 320px)
+{
+  .container-jewelry {
+    .box-item-jewelry {
+      .hot-prodcut{
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+
+      }
+    }
+  }
 }

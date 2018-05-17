@@ -104,150 +104,6 @@ body {
 .owl-animated-in {
   z-index: 0; }
 
-.back-to-top {
-  top: 0px;
-  left: 0px;
-  width: 74px;
-  height: 76px;
-  background: url("../images/sprites.png") no-repeat -268px -125px;
-  display: inline-block; }
-
-.icon-arrow-down-black {
-  top: 0px;
-  left: 0px;
-  width: 38px;
-  height: 26px;
-  background: url("../images/sprites.png") no-repeat -87px -316px;
-  display: inline-block; }
-
-.icon-arrow-down {
-  top: 0px;
-  left: 0px;
-  width: 48px;
-  height: 31px;
-  background: url("../images/sprites.png") no-repeat 0px -316px;
-  display: inline-block; }
-
-.icon-cart-black {
-  top: 0px;
-  left: 0px;
-  width: 89px;
-  height: 79px;
-  background: url("../images/sprites.png") no-repeat -257px -46px;
-  display: inline-block; }
-
-.icon-cart {
-  top: 0px;
-  left: 0px;
-  width: 45px;
-  height: 44px;
-  background: url("../images/sprites.png") no-repeat -212px -111px;
-  display: inline-block; }
-
-.icon-fb {
-  top: 0px;
-  left: 0px;
-  width: 133px;
-  height: 133px;
-  background: url("../images/sprites.png") no-repeat -135px -183px;
-  display: inline-block; }
-
-.icon-flag {
-  top: 0px;
-  left: 0px;
-  width: 27px;
-  height: 18px;
-  background: url("../images/sprites.png") no-repeat -161px -316px;
-  display: inline-block; }
-
-.icon-intagram {
-  top: 0px;
-  left: 0px;
-  width: 135px;
-  height: 133px;
-  background: url("../images/sprites.png") no-repeat 0px -183px;
-  display: inline-block; }
-
-.icon-location {
-  top: 0px;
-  left: 0px;
-  width: 51px;
-  height: 74px;
-  background: url("../images/sprites.png") no-repeat -268px -272px;
-  display: inline-block; }
-
-.icon-mail {
-  top: 0px;
-  left: 0px;
-  width: 13px;
-  height: 10px;
-  background: url("../images/sprites.png") no-repeat 0px -347px;
-  display: inline-block; }
-
-.icon-menu {
-  top: 0px;
-  left: 0px;
-  width: 72px;
-  height: 58px;
-  background: url("../images/sprites.png") no-repeat -140px -125px;
-  display: inline-block; }
-
-.icon-phone {
-  top: 0px;
-  left: 0px;
-  width: 10px;
-  height: 15px;
-  background: url("../images/sprites.png") no-repeat -87px -342px;
-  display: inline-block; }
-
-.icon-plus-black {
-  top: 0px;
-  left: 0px;
-  width: 36px;
-  height: 37px;
-  background: url("../images/sprites.png") no-repeat -125px -316px;
-  display: inline-block; }
-
-.icon-search-black {
-  top: 0px;
-  left: 0px;
-  width: 70px;
-  height: 71px;
-  background: url("../images/sprites.png") no-repeat -268px -201px;
-  display: inline-block; }
-
-.icon-search {
-  top: 0px;
-  left: 0px;
-  width: 39px;
-  height: 41px;
-  background: url("../images/sprites.png") no-repeat -48px -316px;
-  display: inline-block; }
-
-.icon-youtube {
-  top: 0px;
-  left: 0px;
-  width: 140px;
-  height: 137px;
-  background: url("../images/sprites.png") no-repeat 0px -46px;
-  display: inline-block; }
-
-.logo-vsh {
-  top: 0px;
-  left: 0px;
-  width: 117px;
-  height: 65px;
-  background: url("../images/sprites.png") no-repeat -140px -46px;
-  display: inline-block; }
-
-.star {
-  top: 0px;
-  left: 0px;
-  width: 338px;
-  height: 46px;
-  background: url("../images/sprites.png") no-repeat 0px 0px;
-  display: inline-block; }
-
 .res-desktop {
   display: block; }
 
@@ -297,14 +153,14 @@ header#header-vsh {
       height: 45px;
       border: none;
       border-radius: 0;
-      background: transparent;
+      background: #afafaf;
       box-shadow: none;
       border-right: 1px solid rgba(255, 255, 255, 0.2);
       border-left: 1px solid rgba(255, 255, 255, 0.2);
       color: #fff; }
     header#header-vsh .box-menu-header .logo-main .box-search span {
       border: none;
-      background: transparent;
+      background: #afafaf;
       border-radius: 0;
       cursor: pointer;
       color: #fff;
@@ -376,6 +232,9 @@ header#header-vsh {
       .list-socials ul.box-socials li.item-social a.-youtube {
         background-position: -53px 0; }
 
+.ad-banner {
+  padding: 0; }
+
 #carousel-main .owl-nav {
   margin: 0; }
 #carousel-main .owl-dots {
@@ -398,15 +257,15 @@ header#header-vsh {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  padding: 10px;
+  padding: 5px;
   position: absolute;
   top: calc(50% - 7px); }
 #carousel-main .btn-prev {
   left: 10px; }
   #carousel-main .btn-prev i.prev {
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background: url("../images/icon-arrow-down.png") no-repeat center center;
     background-size: 100%;
     -webkit-transform: rotate(90deg);
@@ -418,8 +277,8 @@ header#header-vsh {
   right: 10px; }
   #carousel-main .btn-next i.next {
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background: url("../images/icon-arrow-down.png") no-repeat center center;
     background-size: 100%;
     -webkit-transform: rotate(-90deg);
@@ -450,6 +309,7 @@ header#header-vsh {
       .title-tab ul.tab-title-product li a {
         border-color: #f0eee9;
         background: #ffffff;
+        color: #636363;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
@@ -587,8 +447,7 @@ header#header-vsh {
 
 a[class*="btn-yellow"] {
   border-color: #f0eee9;
-  background: #ffffff;
-  color: #636363;
+  color: #ffffff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -622,7 +481,7 @@ a[class*="btn-yellow"] {
 .banner-contact-slider-house .bar-contact-slider-house {
   background: #c4c4c4; }
 .banner-contact-slider-house ul.box-socials li.item-social {
-  padding-right: 30px;
+  padding-right: 60px;
   vertical-align: text-top; }
   .banner-contact-slider-house ul.box-socials li.item-social a.icon {
     width: 42px;
@@ -647,7 +506,7 @@ a.btn-back-to-top {
   z-index: 10;
   font-size: 15px;
   text-align: center;
-  color: #636363;
+  color: #ffffff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -753,6 +612,9 @@ footer {
     font-size: 18px; }
   .container-category .box-item-jewelry .price-sale .price-old {
     font-size: 14px; }
+
+.box-menu-header .container, .bar-top-header .container {
+  width: 100%; }
 
 .carousel-products-detail {
   margin: auto;
@@ -880,6 +742,9 @@ table.list-info {
   .box-sales .list-sales {
     font-weight: 700; }
 
+.language-mobile {
+  float: right; }
+
 /*setup size menu main in nav*/
 /*setup content center*/
 /*setup size menu main in nav on mobile*/
@@ -899,14 +764,7 @@ table.list-info {
   header#header-vsh .box-menu-header .logo-main .logo-home {
     font-size: 15px; }
   header#header-vsh .box-menu-header .nav-logo-page ul.box-main-menu li.list-menu a.item-menu {
-    padding: 7px 15px; }
-
-  .container-jewelry .box-item-jewelry .name-product {
-    font-size: 30px; }
-  .container-jewelry .box-item-jewelry .price-sale .price {
-    font-size: 36px; }
-  .container-jewelry .box-item-jewelry .price-sale .price-old {
-    font-size: 30px; } }
+    padding: 7px 15px; } }
 /*
 * device medium > 992px and < 1200
 */
@@ -1037,6 +895,45 @@ table.list-info {
     background: url("../images/icon-cart-black.png") no-repeat;
     background-size: auto 100%; }
 
+  .box-filter {
+    position: relative; }
+    .box-filter .caret-bottom {
+      width: 20px;
+      height: 20px;
+      background: url("../images/icon-arrow-down-black.png") no-repeat center center;
+      background-size: 100%;
+      display: inline-block;
+      float: right;
+      margin-top: 3px;
+      margin-right: 10px;
+      position: absolute;
+      right: 5px;
+      top: 10px; }
+    .box-filter.box-add .filter-mobile {
+      background: transparent;
+      color: #000000;
+      border: 1px solid #000; }
+    .box-filter.box-add .caret-bottom {
+      background: url("../images/icon-plus-black.png") no-repeat center center;
+      background-size: 100%; }
+    .box-filter.sort-mobile .filter-mobile {
+      background: transparent;
+      color: #000000;
+      border: 1px solid #000; }
+    .box-filter .filter-mobile {
+      border-radius: 0;
+      background: #737373;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 20px;
+      height: auto;
+      border: none;
+      -moz-appearance: none;
+      /* Firefox */
+      -webkit-appearance: none;
+      /* Safari and Chrome */
+      appearance: none; }
+
   .select-option {
     margin: 10px 0;
     margin-bottom: 0; }
@@ -1055,49 +952,12 @@ table.list-info {
     float: left;
     margin: 10px 0;
     margin-right: 1%; }
-    .add-filter button.dropdown-toggle {
-      width: 100%;
-      font-size: 20px;
-      text-transform: uppercase;
-      text-align: left;
-      padding: 5px 10px;
-      background: transparent;
-      color: #737373;
-      border: 1px solid #dddddd; }
 
   .sort {
     width: 49%;
     float: left;
     margin: 10px 0;
     margin-left: 1%; }
-    .sort button.dropdown-toggle {
-      width: 100%;
-      font-size: 20px;
-      text-transform: uppercase;
-      text-align: left;
-      padding: 5px 10px;
-      background: transparent;
-      color: #737373;
-      border: 1px solid #dddddd; }
-
-  .dropdown-toggle .caret-bottom {
-    width: 20px;
-    height: 20px;
-    background: url("../images/icon-arrow-down-black.png") no-repeat center center;
-    background-size: 100%;
-    display: inline-block;
-    float: right;
-    margin-top: 3px;
-    margin-right: 10px; }
-  .dropdown-toggle .caret-plus {
-    width: 20px;
-    height: 20px;
-    background: url("../images/icon-plus-black.png") no-repeat center center;
-    background-size: 100%;
-    display: inline-block;
-    float: right;
-    margin-top: 3px;
-    margin-right: 10px; }
 
   .btn-yellow-view-more {
     float: right;
@@ -1153,8 +1013,6 @@ table.list-info {
 
   /*footer*/
   footer {
-    background: #000000;
-    color: #ffffff;
     font-size: 18px; }
 
   /*category*/
@@ -1197,6 +1055,11 @@ table.list-info {
   /*
 * devide mobile <480px
 */
+  .container-jewelry .box-item-jewelry .hot-prodcut {
+    width: 30px;
+    height: 30px;
+    font-size: 16px; }
+
   header#header-vsh .bar-top-header .list-contact .language-mobile img {
     width: 30px;
     height: 30px; }
@@ -1294,5 +1157,10 @@ table.list-info {
     width: 80px;
     padding: 2px;
     font-size: 12px; } }
+@media screen and (max-width: 320px) {
+  .container-jewelry .box-item-jewelry .hot-prodcut {
+    width: 20px;
+    height: 20px;
+    font-size: 14px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -33,23 +33,4 @@ and (min-width: $devide_size_large)
       }
     }
   }
-
-
-  .container-jewelry {
-    .box-item-jewelry {
-      .name-product{
-        font-size: 30px;
-      }
-      .price-sale {
-        .price{
-          font-size: 36px;
-
-        }
-        .price-old{
-          font-size: 30px;
-        }
-      }
-    }
-  }
-
 }

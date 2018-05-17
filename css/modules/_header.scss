@@ -61,7 +61,7 @@ header#header-vsh{
           height: 45px;
           border: none;
           border-radius: 0;
-          background: transparent;
+          background: #afafaf;
           box-shadow: none;
           border-right: 1px solid rgba(255,255,255,.2);
           border-left: 1px solid rgba(255,255,255,.2);
@@ -69,7 +69,7 @@ header#header-vsh{
         }
         span{
           border: none;
-          background: transparent;
+          background: #afafaf;
           border-radius: 0;
           cursor: pointer;
           color: #fff;
@@ -172,5 +172,7 @@ header#header-vsh{
     }
   }
 }
-
+.ad-banner{
+  padding: 0;
+}
 
