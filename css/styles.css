@@ -911,15 +911,15 @@ table.list-info {
       top: 10px; }
     .box-filter.box-add .filter-mobile {
       background: transparent;
-      color: #000000;
-      border: 1px solid #000; }
+      color: #828282;
+      border: 1px solid #ededed; }
     .box-filter.box-add .caret-bottom {
       background: url("../images/icon-plus-black.png") no-repeat center center;
       background-size: 100%; }
     .box-filter.sort-mobile .filter-mobile {
       background: transparent;
-      color: #000000;
-      border: 1px solid #000; }
+      color: #828282;
+      border: 1px solid #ededed; }
     .box-filter .filter-mobile {
       border-radius: 0;
       background: #737373;
@@ -933,6 +933,8 @@ table.list-info {
       -webkit-appearance: none;
       /* Safari and Chrome */
       appearance: none; }
+      .box-filter .filter-mobile:focus {
+        box-shadow: none; }
 
   .select-option {
     margin: 10px 0;
