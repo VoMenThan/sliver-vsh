@@ -122,7 +122,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="item-menu-mb">
+                                <a href="#"  id="btn-search" class="item-menu-mb">
                                     <i class="icon-search"></i>
                                     Tìm Kiếm
                                 </a>
@@ -161,7 +161,11 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="col-md-12 input-search-mb">
+                            <input type="text" class="form-control" id="usr">
+                        </div>
                     </nav>
+
                     <div class="select-option res-mobile col-sm-12">
                         <div class="form-group box-filter">
                             <span class="caret-bottom"></span>
@@ -182,45 +186,81 @@
                             </select>
                         </div>
                     </div>
-                    <div class="filter res-mobile col-sm-12">
+
+                    <div class="filter res-mobile col-sm-12 clearfix">
                         <div class="add-filter">
-                            <div class="form-group box-filter box-add">
-                                <span class="caret-bottom"></span>
-                                <select class="form-control filter-mobile">
-                                    <option>
-                                        <a href="#" role="tab" data-toggle="tab">Bộ Lọc</a>
-                                    </option>
-                                    <option>
-                                        <a href="#rings" role="tab" data-toggle="tab">Nhẫn Cặp</a>
-                                    </option>
-                                    <option>
-                                        <a href="#bangles" role="tab" data-toggle="tab">Lắc</a>
-                                    </option>
-                                    <option>
-                                        <a href="#necklace" role="tab" data-toggle="tab">Dây Chuyền</a>
-                                    </option>
-                                </select>
-                            </div>
+                            <a id="btn-filter-mobile" href="#" class="btn-select">Bộ lọc <i class="btn-arrow btn-add"></i></a>
                         </div>
 
-                        <div class="sort res-mobile">
-                            <div class="form-group box-filter sort-mobile">
-                                <span class="caret-bottom"></span>
-                                <select id="sort-mb" class="form-control filter-mobile">
-                                    <option>
-                                        <a href="#" role="tab" data-toggle="tab">Sắp xếp theo</a>
-                                    </option>
+                        <div class="sort">
+                            <a id="btn-sort-mobile" href="#" class="btn-select">Sắp xếp theo <i class="btn-arrow btn-sort"></i></a>
+                        </div>
+                    </div>
 
-                                    <option>
-                                        <a href="#rings" role="tab" data-toggle="tab">Nhẫn Cặp</a>
-                                    </option>
-                                    <option>
-                                        <a href="#bangles" role="tab" data-toggle="tab">Lắc</a>
-                                    </option>
-                                    <option>
-                                        <a href="#necklace" role="tab" data-toggle="tab">Dây Chuyền</a>
-                                    </option>
-                                </select>
+                    <div class="list-filter col-sm-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Khung giá</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="box-radio">
+                                            <div class="radio">
+                                                <label><input type="radio" name="price">Dưới 5000</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="price">5000 - 10000</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="price">10000 - 20000</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="price">Trên 20000</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Tuổi bạc</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="box-radio">
+                                            <div class="radio">
+                                                <label><input type="radio" name="price">Rubi</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="price">Hồng ngọc</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Giới tính</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="box-radio">
+                                            <div class="radio">
+                                                <label><input type="radio" name="price">Nam</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="price">Nữ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -954,7 +994,21 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
+        /*filter*/
+        $("#btn-filter-mobile").click(function(){
+            $("#btn-filter-mobile i").toggleClass('active');
+            $(".list-filter").toggle();
+        });
+        /*filter*/
+        $("#btn-sort-mobile").click(function(){
+            $("#btn-sort-mobile i").toggleClass('active');
+            $(".list-filter").toggle();
+        });
 
+        /*search*/
+        $("#btn-search").click(function(){
+            $(".input-search-mb").toggle();
+        });
         /*slider main*/
         $("#carousel-main").owlCarousel({
             animateOut: 'fadeOut',

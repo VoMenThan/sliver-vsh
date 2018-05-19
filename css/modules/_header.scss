@@ -175,4 +175,39 @@ header#header-vsh{
 .ad-banner{
   padding: 0;
 }
+.list-filter{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 999999;
+  width: 100%;
+  .panel-group {
+    .panel{
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0;
+    }
+    .panel-default{
+      >.panel-heading{
+        background: #f2f2f2;
+        padding: 0;
+        a{
+          display: block;
+          padding: 10px;
+          color: #828282;
+        }
+      }
+    }
+  }
+}
+
+.input-search-mb{
+  margin: 5px 0;
+  display: none;
+  input{
+    border-radius: 0;
+  }
+}
 

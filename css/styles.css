@@ -235,6 +235,32 @@ header#header-vsh {
 .ad-banner {
   padding: 0; }
 
+.list-filter {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 999999;
+  width: 100%; }
+  .list-filter .panel-group .panel {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0; }
+  .list-filter .panel-group .panel-default > .panel-heading {
+    background: #f2f2f2;
+    padding: 0; }
+    .list-filter .panel-group .panel-default > .panel-heading a {
+      display: block;
+      padding: 10px;
+      color: #828282; }
+
+.input-search-mb {
+  margin: 5px 0;
+  display: none; }
+  .input-search-mb input {
+    border-radius: 0; }
+
 #carousel-main .owl-nav {
   margin: 0; }
 #carousel-main .owl-dots {
@@ -564,6 +590,7 @@ footer {
 
 .box-category .title-tab ul.tab-title-product {
   text-align: left;
+  padding: 0 15px;
   -webkit-box-pack: left;
   -webkit-justify-content: left;
   -ms-flex-pack: left;
@@ -619,7 +646,10 @@ footer {
 .carousel-products-detail {
   margin: auto;
   margin-top: 20px;
-  width: 80%; }
+  width: 80%;
+  border-bottom: 1px solid #cccccc; }
+  .carousel-products-detail .owl-stage {
+    padding-bottom: 5px; }
 
 .view-detail .box-icon-mini {
   width: 50%;
@@ -703,7 +733,7 @@ footer {
   top: 9px; }
 .box-button.res-desktop {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   right: 0; }
 
 .box-service {
@@ -726,7 +756,8 @@ footer {
       background: url("../images/icon-medal.png") no-repeat center; }
 
 table.list-info {
-  width: 60%; }
+  width: 69%;
+  margin: auto; }
   table.list-info > tbody > tr > td {
     border-top: none;
     padding: 4px; }
@@ -762,9 +793,7 @@ table.list-info {
 * devide large > 1200px and < 1440px
 */
   header#header-vsh .box-menu-header .logo-main .logo-home {
-    font-size: 15px; }
-  header#header-vsh .box-menu-header .nav-logo-page ul.box-main-menu li.list-menu a.item-menu {
-    padding: 7px 15px; } }
+    font-size: 15px; } }
 /*
 * device medium > 992px and < 1200
 */
@@ -895,11 +924,47 @@ table.list-info {
     background: url("../images/icon-cart-black.png") no-repeat;
     background-size: auto 100%; }
 
-  .box-filter {
+  .filter .btn-select {
+    border: 1px solid #ededed;
+    color: #828282;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase; }
+    .filter .btn-select:focus {
+      text-decoration: none;
+      outline: none; }
+    .filter .btn-select .btn-arrow {
+      margin-bottom: 4px;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      background: url("../images/icon-arrow-down-black.png") no-repeat center;
+      background-size: 100%;
+      float: right; }
+      .filter .btn-select .btn-arrow.btn-add {
+        background: url("../images/icon-plus-black.png") no-repeat center;
+        background-size: 100%; }
+        .filter .btn-select .btn-arrow.btn-add.active {
+          background: url("../images/icon-devide.png") no-repeat center;
+          background-size: 100%; }
+      .filter .btn-select .btn-arrow.btn-sort.active {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg); }
+
+  header#header-vsh .box-menu-header {
     position: relative; }
+
+  .box-filter {
+    position: relative;
+    margin-bottom: 0; }
     .box-filter .caret-bottom {
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       background: url("../images/icon-arrow-down-black.png") no-repeat center center;
       background-size: 100%;
       display: inline-block;
@@ -909,17 +974,6 @@ table.list-info {
       position: absolute;
       right: 5px;
       top: 10px; }
-    .box-filter.box-add .filter-mobile {
-      background: transparent;
-      color: #828282;
-      border: 1px solid #ededed; }
-    .box-filter.box-add .caret-bottom {
-      background: url("../images/icon-plus-black.png") no-repeat center center;
-      background-size: 100%; }
-    .box-filter.sort-mobile .filter-mobile {
-      background: transparent;
-      color: #828282;
-      border: 1px solid #ededed; }
     .box-filter .filter-mobile {
       border-radius: 0;
       background: #737373;
@@ -1158,7 +1212,10 @@ table.list-info {
   .box-service .item-service {
     width: 80px;
     padding: 2px;
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .filter .btn-select {
+    font-size: 16px; } }
 @media screen and (max-width: 320px) {
   .container-jewelry .box-item-jewelry .hot-prodcut {
     width: 20px;

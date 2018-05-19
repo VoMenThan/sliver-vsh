@@ -8,7 +8,12 @@
   margin: auto;
   margin-top: 20px;
   width: 80%;
+  border-bottom: 1px solid #cccccc;
+  .owl-stage{
+    padding-bottom: 5px;
+  }
 }
+
 
 .view-detail{
   .box-icon-mini{
@@ -118,7 +123,7 @@
   }
   &.res-desktop{
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     right: 0;
   }
 }
@@ -153,7 +158,9 @@
   }
 }
 table.list-info{
-  width: 60%;
+  width: 69%;
+  margin: auto;
+
   >tbody>tr>td{
     border-top: none;
     padding: 4px;

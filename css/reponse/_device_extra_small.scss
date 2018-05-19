@@ -146,11 +146,56 @@
       background-size: auto 100%;
     }
   }
+  .filter{
+    .btn-select{
+      border: 1px solid #ededed;
+      color: #828282;
+      width: 100%;
+      display: block;
+      padding: 10px;
+      font-size: 18px;
+      text-transform: uppercase;
+      &:focus{
+        text-decoration: none;
+        outline: none;
+      }
+      .btn-arrow{
+        margin-bottom: 4px;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        background: url("../images/icon-arrow-down-black.png") no-repeat center;
+        background-size: 100%;
+        float: right;
+        &.btn-add{
+          background: url("../images/icon-plus-black.png") no-repeat center;
+          background-size: 100%;
+          &.active{
+            background: url("../images/icon-devide.png") no-repeat center;
+            background-size: 100%;
+          }
+        }
+        &.btn-sort{
+          &.active{
+            @include rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  header#header-vsh {
+    .box-menu-header{
+      position: relative;
+    }
+  }
+
+
 .box-filter{
   position: relative;
+  margin-bottom: 0;
   .caret-bottom{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background: url("../images/icon-arrow-down-black.png") no-repeat center center;
     background-size: 100%;
     display: inline-block;
@@ -160,24 +205,6 @@
     position: absolute;
     right: 5px;
     top: 10px;
-  }
-  &.box-add {
-    .filter-mobile{
-      background: transparent;
-      color: #828282;
-      border: 1px solid #ededed;
-    }
-    .caret-bottom{
-      background: url("../images/icon-plus-black.png") no-repeat center center;
-      background-size: 100%;
-    }
-  }
-  &.sort-mobile {
-    .filter-mobile{
-      background: transparent;
-      color: #828282;
-      border: 1px solid #ededed;
-    }
   }
   .filter-mobile{
     border-radius: 0;
@@ -194,6 +221,7 @@
       box-shadow: none;
     }
   }
+
 }
 
   .select-option{
