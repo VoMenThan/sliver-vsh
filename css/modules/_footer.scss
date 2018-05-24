@@ -4,7 +4,7 @@ a.btn-back-to-top{
   margin: 0;
   position: fixed;
   right: 50px;
-  bottom: 50px;
+  bottom: 200px;
   z-index: 10;
   font-size: 15px;
   text-align: center;
@@ -14,7 +14,11 @@ a.btn-back-to-top{
   background: $color-yellow;
   padding: 5px 10px;
   text-transform: uppercase;
+  opacity: .5;
   display: none;
+  &:hover{
+    opacity: 1;
+  }
   &.active{
     display: inline-block;
   }

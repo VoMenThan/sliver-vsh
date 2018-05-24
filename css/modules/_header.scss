@@ -15,6 +15,9 @@ header#header-vsh{
       padding: 5px 15px;
       > a{
         padding-right: 20px;
+        &:last-child{
+          padding-right: 0;
+        }
         img{
           width: 20px;
         }
@@ -39,11 +42,24 @@ header#header-vsh{
 
   /*box menu navigation header*/
   .box-menu-header{
+    -webkit-transition: .5s time;
+    -moz-transition: .5s time;
+    -ms-transition: .5s time;
+    -o-transition: .5s time;
+    transition: .5s time;
+    &.fixed{
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 99;
+      width: 100%;
+    }
     background: #a1a1a1;
     .box-menu-mobile{
       display: none;
     }
     .logo-main{
+      padding-right: 0;
       .logo-home{
         color: $color-white;
         font-size: 15px;
@@ -78,6 +94,7 @@ header#header-vsh{
       }
     }
     .nav-logo-page{
+      padding: 0;
       ul.box-main-menu{
         float: right;
         li.list-menu{
@@ -101,7 +118,7 @@ header#header-vsh{
             text-transform: uppercase;
             display: inline-block;
             font-size: 15px;
-            padding: 12px 12px;
+            padding: 12px 17px;
             font-weight: 600;
             color: $color-white;
           }
